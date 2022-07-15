@@ -1,0 +1,7 @@
+.box1{
+  width:100px;
+  height:100px;
+  background:url('../images/heart1@2x.png');
+  background-size: cover;
+  dispaly:flex
+}
