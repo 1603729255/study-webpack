@@ -41,7 +41,7 @@ module.exports = {
       // 自定义配置
       cacheGroups:{
         default:{
-          minSize:0
+          // minSize:0
         }
       }
     }
