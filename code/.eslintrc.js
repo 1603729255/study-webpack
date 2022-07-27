@@ -11,6 +11,7 @@ module.exports={
   },
   rules:{
     "no-var":2
-  }
+  },
+  plugins:["import"]
 }
 // 0 禁用 1警告 2报错

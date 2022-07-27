@@ -37,6 +37,7 @@ module.exports = {
     path: path.resolve(__dirname, "../dist"), //绝对路径
     // 入口文件打包输出的文件名
     filename: "static/js/main.js",
+    chunkFilename:"static/js/[name].js",
     clean: true, //打包前，会清空整个path,再进行打包
   },
   module: {
@@ -154,7 +155,10 @@ module.exports = {
       new TerserWebpackPlugin({//压缩js
         parallel:threads//开启多进程和设置进程数量
       })
-    ]
+    ],
+    splitChunks:{
+      chunks:'all'
+    }
   },
   mode: "production",
   devtool: "source-map",
